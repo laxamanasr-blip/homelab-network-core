@@ -333,3 +333,9 @@ homelab-network-core/
 ├─ screenshots/
 ├─ configs/
 └─ notes/
+
+## Topology Diagram
+
+The current homelab network is built around an **OPNsense router-on-a-stick design on Proxmox**, with dual ISP handoff, a dedicated Deco/home uplink VLAN, and an isolated VM compute network for hosted services.
+
+![Homelab topology](diagrams/topology.png)
