@@ -75,6 +75,11 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 # Network Architecture
 
 The homelab is built around an **OPNsense router-on-a-stick deployment running as a VM on Proxmox**.
+## Topology Diagram
+
+The current homelab network is built around an **OPNsense router-on-a-stick design on Proxmox**, with dual ISP handoff, a dedicated Deco/home uplink VLAN, and an isolated VM compute network for hosted services.
+
+![Homelab topology](diagrams/topology.png)
 
 A **VLAN-aware Linux bridge (`vmbr0`)** on the Proxmox host carries multiple tagged networks from a managed switch into the OPNsense VM. This allows OPNsense to terminate multiple VLAN-backed interfaces while keeping the lab consolidated on a single virtualization platform.
 
@@ -334,8 +339,3 @@ homelab-network-core/
 ├─ configs/
 └─ notes/
 
-## Topology Diagram
-
-The current homelab network is built around an **OPNsense router-on-a-stick design on Proxmox**, with dual ISP handoff, a dedicated Deco/home uplink VLAN, and an isolated VM compute network for hosted services.
-
-![Homelab topology](diagrams/topology.png)
