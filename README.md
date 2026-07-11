@@ -224,6 +224,7 @@ This supports:
 - access to services when away from home
 - future hybrid / cloud connectivity experiments
 
+![Tailscale](screenshots/tailscale.png)
 ---
 
 ## 9) Storage and User-Facing Services
