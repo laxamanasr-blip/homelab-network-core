@@ -258,6 +258,7 @@ These platforms are used to:
 - practice troubleshooting
 - build isolated network labs without changing the core infrastructure environment
 
+![GNS3](screenshots/gns3.png)
 ---
 
 # Current Service Inventory
