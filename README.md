@@ -29,7 +29,7 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 ## Virtualization Platform
 - **Proxmox VE** – primary hypervisor for infrastructure and application virtual machines
 
-![Proxmox](screenshots/Proxmox VMs.png)
+![Proxmox](screenshots/Proxmox.png)
 
 ## Network Core
 - **OPNsense** – virtual firewall/router providing:
@@ -41,11 +41,15 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 - **Router-on-a-stick (ROAS)** design on Proxmox using a VLAN-aware bridge
 - **TP-Link Deco mesh** connected through a dedicated VLAN/uplink path
 
+  ![OPNinterface](screenshots/OPNsense_int.png)
+
 ## Security and Filtering
 - **Suricata IDS/IPS**
 - **Zenarmor NGFW**
 - firewall policy and traffic separation through OPNsense
 - **AdGuard Home** for DNS filtering / resolver functions
+
+![OPNZen](screenshots/OPNsense_Zen.png)
 
 ## Identity / Core Services
 - **Windows Server** for:
