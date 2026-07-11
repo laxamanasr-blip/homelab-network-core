@@ -29,7 +29,7 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 ## Virtualization Platform
 - **Proxmox VE** – primary hypervisor for infrastructure and application virtual machines
 
-  (screenshots/Proxmox Vms.png)
+![Proxmox](screenshots/Proxmox VMs.png)
 
 ## Network Core
 - **OPNsense** – virtual firewall/router providing:
