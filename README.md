@@ -41,15 +41,11 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 - **Router-on-a-stick (ROAS)** design on Proxmox using a VLAN-aware bridge
 - **TP-Link Deco mesh** connected through a dedicated VLAN/uplink path
 
-  ![OPNinterface](screenshots/OPNsense_int.png)
-
 ## Security and Filtering
 - **Suricata IDS/IPS**
 - **Zenarmor NGFW**
 - firewall policy and traffic separation through OPNsense
 - **AdGuard Home** for DNS filtering / resolver functions
-
-![OPNZen](screenshots/OPNsense_Zen.png)
 
 ## Identity / Core Services
 - **Windows Server** for:
@@ -59,27 +55,18 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 - **Authentik** as the identity provider (IdP) / SSO platform
 - **Vaultwarden** for password and credential management
 
-  ![Authentik](screenshots/authentik.png)
-  ![Vaultwarden](screenshots/vaultwarden.png)
-
 ## Infrastructure Documentation and IPAM
 - **NetBox** for IPAM, infrastructure documentation, and inventory
-
-![Netbox](screenshots/netbox.png)
 
 ## Monitoring and Visibility
 - **PRTG**
 - **Grafana**
-
-![Grafana](screenshots/grafana.png)
 
 ## Remote Access and Internal Platforms
 - **Tailscale gateway** for secure remote access
 - **Nextcloud** for self-hosted cloud storage
 - **Jellyfin**
 - **Agent DVR**
-
-![Agent](screenshots/AgentDVR.png)
 
 ## Network Lab / Practice Platforms
 - **EVE-NG**
@@ -116,6 +103,8 @@ A **VLAN-aware Linux bridge (`vmbr0`)** on the Proxmox host carries multiple tag
 - Isolated network for virtual machines and internal infrastructure services hosted on Proxmox
 - OPNsense acts as the gateway for this network
 
+![OPNinterface](screenshots/OPNsense_int.png)
+
 ## Traffic Flow Summary
 A managed switch trunks the required VLANs to the Proxmox host.  
 Inside Proxmox, the OPNsense VM terminates the tagged interfaces and provides:
@@ -143,6 +132,8 @@ Security tooling attached to the OPNsense platform includes:
 - **Suricata IDS/IPS**
 - **Zenarmor NGFW**
 
+![Proxmox](screenshots/Proxmox.png)
+
 ---
 
 ## 2) Windows Infrastructure
@@ -152,12 +143,16 @@ A dedicated **Windows Server** VM provides core internal services commonly found
 - **NPS** – authentication-related lab scenarios such as RADIUS-based testing
 - **Certificate Authority** – internal PKI and certificate issuance
 
+![Cert](screenshots/cert.png)
+
 This allows the lab to support certificate-based workflows and more realistic infrastructure testing.
 
 ---
 
 ## 3) Identity and Access
 **Authentik** is used as the lab’s **identity provider (IdP)** for centralized authentication and SSO across supported internal services.
+
+![Authentik](screenshots/authentik.png)
 
 This supports:
 - centralized authentication flows
@@ -175,6 +170,7 @@ This supports:
 - cleaner access to internal services
 - visibility into DNS activity
 
+![Adguard](screenshots/adguard.png)
 ---
 
 ## 5) IPAM and Infrastructure Documentation
@@ -184,6 +180,8 @@ This supports:
 - infrastructure inventory
 - service and device tracking
 - future topology and dependency documentation
+
+![Netbox](screenshots/netbox.png)
 
 One of the goals of this lab is to treat the environment like a real platform rather than an undocumented set of VMs, and NetBox is a big part of that.
 
@@ -205,12 +203,16 @@ Used for:
 - visualization of infrastructure data
 - future integrations with additional telemetry sources
 
+![Grafana](screenshots/grafana.png)
+
 ---
 
 ## 7) Secrets Management
 **Vaultwarden** is hosted in the lab for password and credential management.
 
 This helps keep operational credentials, service accounts, and internal access details managed more cleanly instead of being stored in ad hoc notes or local files.
+
+![Vaultwarden](screenshots/vaultwarden.png)
 
 ---
 
@@ -231,11 +233,17 @@ The lab also hosts practical self-hosted services used for day-to-day functional
 ### Nextcloud
 Used as self-hosted cloud storage / internal file platform.
 
+![Nextcloud](screenshots/nextcloud.png)
+
 ### Jellyfin
 Used as a media service hosted inside the lab environment.
 
+![Jelly](screenshots/jelly.png)
+
 ### Agent DVR
 Used for video / surveillance-related workloads.
+
+![Agent](screenshots/AgentDVR.png)
 
 These services also help validate storage, reverse proxy, identity, and remote-access workflows in a more realistic way than purely synthetic lab VMs.
 
