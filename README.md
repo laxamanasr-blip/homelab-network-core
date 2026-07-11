@@ -59,18 +59,27 @@ It also serves as the foundation for future portfolio work related to **SIEM/log
 - **Authentik** as the identity provider (IdP) / SSO platform
 - **Vaultwarden** for password and credential management
 
+  ![Authentik](screenshots/authentik.png)
+  ![Vaultwarden](screenshots/vaultwarden.png)
+
 ## Infrastructure Documentation and IPAM
 - **NetBox** for IPAM, infrastructure documentation, and inventory
+
+![Netbox](screenshots/netbox.png)
 
 ## Monitoring and Visibility
 - **PRTG**
 - **Grafana**
+
+![Grafana](screenshots/grafana.png)
 
 ## Remote Access and Internal Platforms
 - **Tailscale gateway** for secure remote access
 - **Nextcloud** for self-hosted cloud storage
 - **Jellyfin**
 - **Agent DVR**
+
+![Agent](screenshots/AgentDVR.png)
 
 ## Network Lab / Practice Platforms
 - **EVE-NG**
