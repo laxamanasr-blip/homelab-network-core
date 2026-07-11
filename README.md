@@ -132,8 +132,7 @@ Security tooling attached to the OPNsense platform includes:
 - **Suricata IDS/IPS**
 - **Zenarmor NGFW**
 
-![Proxmox](screenshots/Proxmox.png)
-
+![OPNZen](screenshots/OPNsense_Zen.png)
 ---
 
 ## 2) Windows Infrastructure
